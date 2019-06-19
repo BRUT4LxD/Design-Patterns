@@ -1,21 +1,58 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdapterPattern
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            // The code provided will print ‘Hello World’ to the console.
-            // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
-            Console.WriteLine("Hello World!");
-            Console.ReadKey();
+            Hole hole = new Hole(10);
+            RoundThing roundThing = new RoundThing { Radius = 8 };
+            SquareThing squareThing = new SquareThing(10);
 
-            // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
+            hole.Fits(roundThing);
+            hole.Fits(new SquareThingAdapter(squareThing));
+
+            Console.ReadKey();
+        }
+    }
+
+    internal class SquareThingAdapter : RoundThing
+    {
+        private readonly SquareThing _squareThing;
+
+        public SquareThingAdapter(SquareThing squareThing)
+        {
+            _squareThing = squareThing;
+        }
+    }
+
+    internal class SquareThing
+    {
+        public SquareThing(int i)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    internal class RoundThing
+    {
+        public int Radius { get; set; }
+
+    }
+
+    internal class Hole
+    {
+        private readonly int _radius;
+
+        public Hole(int radius)
+        {
+            _radius = radius;
+        }
+
+        public void Fits(RoundThing roundThing)
+        {
+            Console.WriteLine(_radius > roundThing.Radius ? "It FITS!!" : "It does not fit!");
         }
     }
 }
