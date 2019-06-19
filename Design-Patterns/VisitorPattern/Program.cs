@@ -1,21 +1,28 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace VisitorPattern
+namespace Visitor
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            // The code provided will print ‘Hello World’ to the console.
-            // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
             Console.WriteLine("Hello World!");
-            Console.ReadKey();
+            var shapes = new List<IShape>
+            {
+                new Dot(),
+                new Rectangle(),
+                new Circle(),
+                new CompoundShape()
+            };
 
-            // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
+            XMLExportVisitor visitor = new XMLExportVisitor();
+
+            foreach (IShape shape in shapes)
+            {
+                shape.Accept(visitor);
+            }
+            Console.ReadKey();
         }
     }
 }
