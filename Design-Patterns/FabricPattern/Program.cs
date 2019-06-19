@@ -1,21 +1,19 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FabricPattern
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            // The code provided will print ‘Hello World’ to the console.
-            // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
-            Console.WriteLine("Hello World!");
+            ITransport vehicle = TransportFactory.CreateTransport(TransportType.Car);
+            vehicle.Move();
             Console.ReadKey();
 
-            // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
+
+            ITransport vehicle2 = TransportFactory.CreateTransport(TransportType.Ship);
+            vehicle2.Move();
+            Console.ReadKey();
         }
     }
 }

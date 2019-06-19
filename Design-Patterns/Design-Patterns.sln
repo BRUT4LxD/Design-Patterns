@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Design-Patterns", "Design-Patterns\Design-Patterns.csproj", "{2F627FAD-FE92-4563-8747-C2BFC75D75EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FabricPattern", "FabricPattern\FabricPattern.csproj", "{38D2E1E4-4146-4773-B0F2-800715172F1A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryPattern", "FabricPattern\FactoryPattern.csproj", "{38D2E1E4-4146-4773-B0F2-800715172F1A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderPattern", "BuilderPattern\BuilderPattern.csproj", "{2898D331-A42E-4581-986E-94D0B00ABF85}"
 EndProject
