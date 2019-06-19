@@ -1,21 +1,21 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace StatePattern
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            // The code provided will print ‘Hello World’ to the console.
-            // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
-            Console.WriteLine("Hello World!");
-            Console.ReadKey();
+            Player player = new Player();
 
-            // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
+            player.State = new PlayingState(player);
+
+            player.State.ClickPlay();
+            player.State.ClickPause();
+            player.State.ClickPlay();
+            player.State.ClickExit();
+
+            Console.ReadKey();
         }
     }
 }
