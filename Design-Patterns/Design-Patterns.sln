@@ -1,21 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.645
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Design-Patterns", "Design-Patterns\Design-Patterns.csproj", "{2F627FAD-FE92-4563-8747-C2BFC75D75EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryPattern", "FabricPattern\FactoryPattern.csproj", "{38D2E1E4-4146-4773-B0F2-800715172F1A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "FabricPattern\Factory.csproj", "{38D2E1E4-4146-4773-B0F2-800715172F1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderPattern", "BuilderPattern\BuilderPattern.csproj", "{2898D331-A42E-4581-986E-94D0B00ABF85}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "BuilderPattern\Builder.csproj", "{2898D331-A42E-4581-986E-94D0B00ABF85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterPattern", "AdapterPattern\AdapterPattern.csproj", "{5AEEBDC2-77F8-4745-ABE2-42C6DF64CED1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "AdapterPattern\Adapter.csproj", "{5AEEBDC2-77F8-4745-ABE2-42C6DF64CED1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatePattern", "StatePattern\StatePattern.csproj", "{F2A65BE5-A160-46FE-9B6A-F92A5B14DD2F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State", "StatePattern\State.csproj", "{F2A65BE5-A160-46FE-9B6A-F92A5B14DD2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisitorPattern", "VisitorPattern\VisitorPattern.csproj", "{7344DB65-C201-4983-A418-CA130AAC32F5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor", "VisitorPattern\Visitor.csproj", "{7344DB65-C201-4983-A418-CA130AAC32F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacadePattern", "FacadePattern\FacadePattern.csproj", "{33AEB1A9-CC7B-4E88-B7D3-0DBC906DE28B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "FacadePattern\Facade.csproj", "{33AEB1A9-CC7B-4E88-B7D3-0DBC906DE28B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

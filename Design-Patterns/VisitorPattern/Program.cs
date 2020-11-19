@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Visitor
+namespace VisitorPattern
 {
     internal class Program
     {

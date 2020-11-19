@@ -1,6 +1,6 @@
 using System;
 
-namespace Visitor
+namespace VisitorPattern
 {
     public class XMLExportVisitor : IVisitor
     {

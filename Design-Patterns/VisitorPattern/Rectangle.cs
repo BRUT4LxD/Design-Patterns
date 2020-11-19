@@ -1,4 +1,4 @@
-namespace Visitor
+namespace VisitorPattern
 {
     public class Rectangle : IShape
     {
